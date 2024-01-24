@@ -5,7 +5,7 @@ import { ProxyAgent } from "proxy-agent";
 
 const agent = new ProxyAgent();
 const client = new S3Client({
-  region: "ap-southeast-2",
+  region: "ap-northeast-1",
   requestHandler: new NodeHttpHandler({
     httpAgent: agent,
     httpsAgent: agent,
